@@ -1,0 +1,22 @@
+{
+  "name": "share_book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build-css": "node-sass --include-path scss src/scss/style.scss dist/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^16.5.2",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.18.4"
+  }
+}
