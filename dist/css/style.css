@@ -3,12 +3,7 @@ body {
   padding: 0;
   font-family: "Noto Serif JP", serif;
   font-size: 16px;
-  background: #5433FF;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+ }
 
 a {
   text-decoration: none;
@@ -121,7 +116,7 @@ p, a, h1, h2, h3, button, img {
       height: 40px;
       margin-bottom: 20px;
       background-color: rgba(255, 255, 255, 0.3);
-      border: 1px solid white;
+      border: 1px solid black;
       border-radius: 3px; }
       @media screen and (max-width: 414px) {
         .main__sidebar--select select {
@@ -131,7 +126,7 @@ p, a, h1, h2, h3, button, img {
       width: 100px;
       height: 40px;
       background-color: rgba(255, 255, 255, 0.3);
-      border: 1px solid white;
+      border: 1px solid black;
       border-radius: 5px;
       margin-top: 10px;
       transition: .5s;
@@ -171,11 +166,10 @@ p, a, h1, h2, h3, button, img {
     color: black;
     font-size: 18px;
     margin-bottom: 20px;
-    transition: .3s all;
-    color: rgba(255, 255, 255, 0.7); }
+    transition: .3s all; }
     .mypage__sidebar--item:hover {
       transition: .3s all;
-      color: white; }
+      color: #FFA000; }
     .mypage__sidebar--item:last-child {
       margin-bottom: 0; }
 
@@ -323,12 +317,12 @@ p, a, h1, h2, h3, button, img {
   margin-bottom: 50px; }
   .imgDrop__area {
     display: block;
-    background-color: rgba(255, 255, 255, 0.5);
     position: relative;
     width: 30%;
     height: 300px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto; 
+    border: 1px solid black;}
     @media screen and (max-width: 414px) {
       .imgDrop__area {
         width: 90%; } }
