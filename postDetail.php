@@ -50,9 +50,6 @@ debug('画面表示処理終了********************');
     </p>
 
     <main class="detail">
-      <div class="detail__user">
-        <p><?php if($viewData['user_id'] == $dbFormData['id']) echo '投稿者：'.$dbFormData['username']; ?></p>
-      </div>
       <div class="detail__ttl">
         <p><?php echo '本のタイトル：'.sanitize($viewData['name']); ?></p>
       </div>
