@@ -73,7 +73,7 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         ?>
         <a class="main__contents--item" href="postDetail.php<?php echo (!empty(appendGetParam())) ? appendGetParam().'&p_id='.$val['id'] : '?p_id='.$val['id']; ?>">
           <div class="main__contents--head">
-            <p>投稿者：<?php if(!empty($dbFormData['username'])) echo $dbFormData['username']; ?></p>
+            <p><?php echo '本のタイトル：'.sanitize($val['name']); ?></p>
             <img src="<?php echo sanitize($val['pic']); ?>" alt="<?php echo sanitize($val['name']); ?>">
           </div>
           <div class="main__contents--body">
